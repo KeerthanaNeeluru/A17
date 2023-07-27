@@ -18,20 +18,13 @@ namespace A17
             SideC = c;
             ShapeType = "Triangle";
         }
-        double s;
-        public double Sides
-        {
-            set { s = (SideA + SideB + SideC) / 2; }
-        }
-        public override double Area
-        {
-            set { Area = Math.Sqrt(s * (s - SideA) * (s - SideB) * (s - SideC)); }
-        }
-        public override double Perimeter
-        {
-            set { Perimeter = SideA + SideB + SideC; }
-        }
+
        
+        public override double Area=> Math.Sqrt(((SideA + SideB + SideC) / 2) * (((SideA + SideB + SideC) / 2) - SideA) * (((SideA + SideB + SideC) / 2) - SideB) * (((SideA + SideB + SideC) / 2) - SideC));
+
+        public override double Perimeter=> Perimeter = SideA + SideB + SideC;
+
+
         public void print()
         {
             Console.WriteLine("Shape : " + ShapeType);

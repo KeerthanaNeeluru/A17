@@ -15,7 +15,7 @@ namespace A17
           Radius=r;
             ShapeType = "Circle";
         }
-        public override double Area => 2 * Math.PI * Math.Pow(Radius, 2);
+        public override double Area =>  Math.PI * Math.Pow(Radius, 2);
 
         public override double Perimeter => 2 * Math.PI * Radius;
 

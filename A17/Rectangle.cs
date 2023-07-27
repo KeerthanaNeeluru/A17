@@ -19,7 +19,7 @@ namespace A17
         }
         public override double Area=> Width * Height;
 
-        public override double Perimeter => Perimeter = 2 * Width * Height;
+        public override double Perimeter =>  2 * Width * Height;
 
         public void print()
         {

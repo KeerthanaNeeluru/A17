@@ -13,8 +13,8 @@ namespace A17
        
         public Rectangle(double w,double h)
         {
-            Width = 0;
-            Height = 0;
+            Width = w;
+            Height = h;
             ShapeType = "Rectangle";
         }
         public override double Area=> Width * Height;
